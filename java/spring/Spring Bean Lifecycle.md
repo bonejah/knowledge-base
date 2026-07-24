@@ -7,7 +7,7 @@ Spring allows you to execute custom logic during the Bean lifecycle, such as:
 - Execute code after the Bean has been initialized
 - Execute code before the Bean is destroyed
 
-![Spring Bean Lifecycle](./spring-beans-lifecycle.png)
+![Spring Bean Lifecycle](./assets/spring-beans-lifecycle.png)
 
 ## Initialization Callbacks
 

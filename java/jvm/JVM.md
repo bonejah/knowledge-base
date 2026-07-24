@@ -1,6 +1,6 @@
 # JVM Architecture
 
-![JVM Architecture](./jvm-architecture.png)
+![JVM Architecture](./assets/jvm-architecture.png)
 
 ## What is the JVM?
 
@@ -46,11 +46,11 @@ Java Compiler compiles .java files -> .class files will be created -> JVM gets .
   2. Load classes from the application classpath
   3. Environment variable which mapped to java.class.path
 
-  ![Delegation-Hierarchy](./delegaction-hierarchy.png)
+  ![Delegation-Hierarchy](./assets/delegaction-hierarchy.png)
 
 ## JVM Memory
 
-![JVM Memory](./jvm-memory.png)
+![JVM Memory](./assets/jvm-memory.png)
 
 ### Method Area
 
