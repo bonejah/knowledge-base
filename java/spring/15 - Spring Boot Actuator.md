@@ -1,4 +1,4 @@
-# 14 - Spring Boot Actuator
+# 15 - Spring Boot Actuator
 
 ## 1. What Is Spring Boot Actuator?
 
@@ -6,17 +6,17 @@
 
 It exposes information about the running application through endpoints, such as:
 
-* Application health
-* Application metrics
-* JVM information
-* Memory usage
-* HTTP request statistics
-* Database connectivity
-* Active beans
-* Environment properties
-* Logging configuration
-* Application mappings
-* Thread information
+- Application health
+- Application metrics
+- JVM information
+- Memory usage
+- HTTP request statistics
+- Database connectivity
+- Active beans
+- Environment properties
+- Logging configuration
+- Application mappings
+- Thread information
 
 In simple terms:
 
@@ -52,17 +52,17 @@ Imagine that you have a Spring Boot application running in production.
 
 Everything appears normal from the outside, but you need to answer questions such as:
 
-* Is the application running?
-* Can it connect to the database?
-* How much memory is it using?
-* How many HTTP requests is it receiving?
-* Which endpoints are being called?
-* How many requests are failing?
-* Is the JVM running out of memory?
-* How many threads are active?
-* What is the current application configuration?
-* Is a dependency such as MongoDB or PostgreSQL unavailable?
-* Is the application ready to receive traffic?
+- Is the application running?
+- Can it connect to the database?
+- How much memory is it using?
+- How many HTTP requests is it receiving?
+- Which endpoints are being called?
+- How many requests are failing?
+- Is the JVM running out of memory?
+- How many threads are active?
+- What is the current application configuration?
+- Is a dependency such as MongoDB or PostgreSQL unavailable?
+- Is the application ready to receive traffic?
 
 Without Actuator, you would have to implement many of these features yourself.
 
@@ -154,11 +154,11 @@ The purpose is to answer:
 
 This endpoint is commonly used by:
 
-* Kubernetes
-* Load balancers
-* Cloud platforms
-* Monitoring systems
-* Deployment systems
+- Kubernetes
+- Load balancers
+- Cloud platforms
+- Monitoring systems
+- Deployment systems
 
 ---
 
@@ -202,13 +202,13 @@ Spring Boot can automatically create health indicators for many technologies.
 
 For example:
 
-* JDBC databases
-* MongoDB
-* Redis
-* Cassandra
-* Kafka
-* Elasticsearch
-* Disk space
+- JDBC databases
+- MongoDB
+- Redis
+- Cassandra
+- Kafka
+- Elasticsearch
+- Disk space
 
 This means that if your database becomes unavailable, the health status can reflect that.
 
@@ -412,14 +412,14 @@ Example:
 
 Metrics can provide information about:
 
-* JVM memory
-* Garbage collection
-* CPU
-* Threads
-* HTTP requests
-* Database connection pools
-* Application-specific metrics
-* Cache usage
+- JVM memory
+- Garbage collection
+- CPU
+- Threads
+- HTTP requests
+- Database connection pools
+- Application-specific metrics
+- Cache usage
 
 ---
 
@@ -563,13 +563,13 @@ For example:
 
 These can potentially reveal:
 
-* Environment variables
-* Configuration
-* Internal application structure
-* Bean information
-* Request mappings
-* JVM information
-* Sensitive configuration details
+- Environment variables
+- Configuration
+- Internal application structure
+- Bean information
+- Request mappings
+- JVM information
+- Sensitive configuration details
 
 Therefore, Actuator should be treated as a **management interface**, not as a normal public API.
 
@@ -767,10 +767,10 @@ You can inspect:
 
 This can help answer questions such as:
 
-* How many requests are arriving?
-* How long are requests taking?
-* Which HTTP status codes are being returned?
-* Which endpoints are receiving traffic?
+- How many requests are arriving?
+- How long are requests taking?
+- Which HTTP status codes are being returned?
+- Which endpoints are receiving traffic?
 
 ---
 
@@ -928,11 +928,11 @@ can provide information about JVM threads.
 
 This can help investigate:
 
-* Deadlocks
-* Blocked threads
-* Thread pool problems
-* High concurrency
-* Threads waiting on locks
+- Deadlocks
+- Blocked threads
+- Thread pool problems
+- High concurrency
+- Threads waiting on locks
 
 For example:
 
@@ -959,17 +959,17 @@ can generate a JVM heap dump.
 
 Heap dumps are useful for investigating:
 
-* Memory leaks
-* Excessive object creation
-* OutOfMemoryError
-* Unexpected memory consumption
+- Memory leaks
+- Excessive object creation
+- OutOfMemoryError
+- Unexpected memory consumption
 
 However, heap dumps can be:
 
-* Very large
-* Expensive to generate
-* Sensitive
-* Potentially dangerous to expose
+- Very large
+- Expensive to generate
+- Sensitive
+- Potentially dangerous to expose
 
 Therefore, this endpoint should be heavily protected.
 
