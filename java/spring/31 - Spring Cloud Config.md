@@ -4,7 +4,7 @@
 
 In a real-world Spring Boot application, configuration is usually not limited to a single `application.properties` or `application.yml` file.
 
-As the number of microservices grows, configuration becomes difficult to manage:
+As the number of microservices grows, configuration becomes difficult to manage (I guarantee):
 
 - Multiple microservices
 - Multiple environments
