@@ -108,8 +108,8 @@ Response:
 
 ```json
 {
-    "id": 1,
-    "name": "John"
+  "id": 1,
+  "name": "John"
 }
 ```
 
@@ -270,8 +270,8 @@ Body:
 
 ```json
 {
-    "name": "Bruno",
-    "department": "IT"
+  "name": "Bruno",
+  "department": "IT"
 }
 ```
 
@@ -500,8 +500,8 @@ JSON:
 
 ```json
 {
-    "name": "John",
-    "role": "Developer"
+  "name": "John",
+  "role": "Developer"
 }
 ```
 
@@ -563,7 +563,11 @@ public EmployeeController(EmployeeService service){
 
 #### Disadvantages
 
-Field injection can hide dependencies.
+Your class can exist with an INVALID state (NullPinterException)
+Maes Unit Test very difficult
+Field injection can hide dependencies (Bad Design)
+Breaks Immutability (Dependency can change)
+Cannot use final keyword
 
 ---
 
@@ -658,13 +662,13 @@ Database
 
 ### Layer Responsibilities
 
-| Layer      | Responsibility                          |
-| ---------- | --------------------------------------- |
-| Controller | Handle HTTP requests and responses      |
-| Service    | Business rules and application logic     |
-| Repository | Database communication                  |
-| Entity     | Database representation                 |
-| DTO        | Data transfer between layers            |
+| Layer      | Responsibility                       |
+| ---------- | ------------------------------------ |
+| Controller | Handle HTTP requests and responses   |
+| Service    | Business rules and application logic |
+| Repository | Database communication               |
+| Entity     | Database representation              |
+| DTO        | Data transfer between layers         |
 
 ---
 
@@ -716,7 +720,7 @@ Body:
 
 ```json
 {
-    "name": "Bruno"
+  "name": "Bruno"
 }
 ```
 
